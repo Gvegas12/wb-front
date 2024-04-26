@@ -1,0 +1,69 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e1e1e1;
+}
+
+.container {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.block_1 {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 10em;
+  height: 10em;
+  background-color: #ff0000;
+}
+
+.block_2 {
+  position: absolute;
+  z-index: 1;
+  width: 20em;
+  height: 20em;
+  background-color: #00ff0d;
+}
+
+/*
+    Почему не работает z-index: 3,
+    если другие z-index ниже, чем у данного блока?  
+*/
+.block_3 {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  width: 15em;
+  height: 15em;
+  background-color: #2b00ff;
+}
+
+.description {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
